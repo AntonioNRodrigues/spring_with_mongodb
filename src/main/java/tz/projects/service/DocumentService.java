@@ -28,10 +28,8 @@ public class DocumentService {
     }
 
     public DocumentRecord saveDocument(String title, String author, MultipartFile file) throws IOException {
-        // Store file in GridFS
         String fileId = gridFsTemplate.store(file.getInputStream(), file.getOriginalFilename(), file.getContentType()).toString();
 
-        // Save metadata in collection
         DocumentRecord record = new DocumentRecord();
         record.setTitle(title);
         record.setAuthor(author);
