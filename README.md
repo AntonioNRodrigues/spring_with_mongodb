@@ -119,10 +119,6 @@ Example curl:
 - The unit tests in `src/test/java` mock the `DocumentService` or the GridFS operations; they do not require a live MongoDB instance.
 - For end-to-end manual testing, use the Docker Compose file included in the project to spin up MongoDB.
 
-## Contributing
-
-Contributions, issue reports and improvements are welcome. Please follow the existing project style and add tests for new behavior.
-
 ## License
 
 This example project is provided as-is for learning and demonstration purposes.
